@@ -1,5 +1,0 @@
-Workstation Type	 Field Value
-123T7522FHHD	Teller Machine
-107B750BRTBL	Back office
-127W9342FPHD	Branch Image Capture
-999T7522FHHD	Teller Machine
