@@ -25,16 +25,11 @@ print ("{0} age is {2}. He has scored {1} in HSC.".format(name, age, score))
 # Method 4 - f'string
 personName = "Alex"
 companyName = "Google"
-print("{personName} works in {companyName}") # {personName} works in {companyName}
-print(f"{personName} works in {companyName}") # Alex works in Google
-
 waterAmount = 1.5
 noOfTimes = 4
 totalAmount = waterAmount * noOfTimes
 print(f"{personName} works in {companyName}. He drinks {totalAmount} of water per day.")
 print(f"{personName} works in {companyName}. He drinks {waterAmount * noOfTimes} of water per day.")
-fruits = {
-    "apple": 10,
-    "orange": 20,
-}
-print(f'Apple count are {fruits['apple']}')
+
+#Method 5 - Concate at end
+print("My name is ", personName)
