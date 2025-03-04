@@ -8,11 +8,9 @@ A list is an ordered, mutable collection of elements. It can hold items of diffe
 - Mutable (can be changed after creation)
 - Allows duplicate elements
 
-#### **Example:**
+#### **Creating List**
 ```python
 my_list = [1, 2, 3, "apple", 4.5]
-my_list.append("banana")  # Adding an element
-print(my_list)
 ```
 
 ---
@@ -25,10 +23,9 @@ A tuple is an ordered, immutable collection of elements. It is similar to a list
 - Immutable (cannot be changed after creation)
 - Allows duplicate elements
 
-#### **Example:**
+#### **Creating Tuple:**
 ```python
 my_tuple = (1, 2, 3, "apple", 4.5)
-print(my_tuple[1])  # Accessing an element
 ```
 
 ---
@@ -38,14 +35,12 @@ A set is an unordered collection of unique elements.
 
 #### **Characteristics:**
 - Unordered (no specific sequence)
-- Mutable (can add or remove elements, but individual elements are immutable)
+- Mutable (can add or remove elements)
 - Does not allow duplicate elements
 
 #### **Example:**
 ```python
 my_set = {1, 2, 3, 4, 5}
-my_set.add(6)  # Adding an element
-print(my_set)
 ```
 
 ---
@@ -62,6 +57,4 @@ A dictionary is an unordered collection of key-value pairs.
 #### **Example:**
 ```python
 my_dict = {"name": "Alice", "age": 25, "city": "New York"}
-my_dict["age"] = 26  # Modifying a value
-print(my_dict)
 ```
