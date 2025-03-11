@@ -1,5 +1,3 @@
-# **Python Practice Questions**
-
 ## **1. Type Conversion**
 
 **Q1:** Convert the following string into an integer and print its type:
