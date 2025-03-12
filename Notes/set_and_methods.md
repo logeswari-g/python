@@ -1,5 +1,3 @@
-# **Python Sets - A Comprehensive Guide**
-
 ## **1. Introduction to Sets**
 A **set** in Python is an **unordered**, **mutable**, and **unindexed** collection that contains **unique elements**.
 
