@@ -1,8 +1,8 @@
-1. Introduction to Functions
+## ** Introduction to Functions**
 
 A function in Python is a block of reusable code designed to perform a specific task. Functions help in modular programming by breaking code into smaller, manageable, and reusable sections.
 
-2. Defining a Function
+## ** Defining a Function**
 
 A function is defined using the def keyword followed by a function name and parentheses.
 
