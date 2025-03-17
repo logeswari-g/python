@@ -1,4 +1,4 @@
-** **Questions on List and Dictionary Comprehension** **
+### Questions on List and Dictionary Comprehension
 
 1. Generate a list of squares for numbers from 1 to 10 using list comprehension.
 
