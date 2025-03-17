@@ -1,8 +1,8 @@
-## ** Introduction to Functions**
+## Introduction to Functions
 
 A function in Python is a block of reusable code designed to perform a specific task. Functions help in modular programming by breaking code into smaller, manageable, and reusable sections.
 
-## ** Defining a Function**
+## Defining a Function
 
 A function is defined using the def keyword followed by a function name and parentheses.
 
@@ -13,7 +13,7 @@ def function_name(parameters):
     return value  # Optional return statement
 ```
 
-## ** Method 1: Numbers of Arguments (Positional Arguments)**
+## Method 1: Numbers of Arguments (Positional Arguments)
 
 Functions in Python can accept a fixed number of arguments, which must be passed in a specific order.
 
@@ -30,7 +30,7 @@ print(result1)  # Output: 30
 
 ---
 
-## ** Method 2: Keyword Arguments**
+## Method 2: Keyword Arguments
 
 With keyword arguments, the position of arguments does not matter as each argument is explicitly assigned a value.
 
@@ -47,7 +47,7 @@ print(result2)  # Output: 30
 
 ---
 
-## ** Method 3: Arbitrary Arguments (`*args`)**
+## Method 3: Arbitrary Arguments (`*args`)
 
 Arbitrary arguments allow functions to accept a variable number of arguments, which are treated as a tuple.
 
@@ -67,7 +67,7 @@ print(result4)  # Output: 150
 ```
 ---
 
-## ** Method 4: Keyword Arbitrary Arguments (`**kwargs`)**
+## Method 4: Keyword Arbitrary Arguments (`**kwargs`)
 
 Using `**kwargs`, functions can accept a variable number of keyword arguments, which are stored as a dictionary.
 
@@ -92,7 +92,7 @@ None  # 'name5' does not exist, so None is returned
 
 ---
 
-## ** Method 5: Default Values in Function Arguments**
+## Method 5: Default Values in Function Arguments
 
 Default values allow functions to be called with fewer arguments by providing default values for some parameters.
 
