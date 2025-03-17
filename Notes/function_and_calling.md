@@ -6,7 +6,7 @@ A function in Python is a block of reusable code designed to perform a specific 
 
 A function is defined using the def keyword followed by a function name and parentheses.
 
-```
+```python
 def function_name(parameters):
     """Docstring (optional): Describes the function."""
     # Function body
