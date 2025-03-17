@@ -19,13 +19,12 @@ Functions in Python can accept a fixed number of arguments, which must be passed
 
 ### **Example:**
 ```python
-def addition(num1, num2):
-    sum = num1 + num2
-    return sum
+def function_name(arg1, arg2):
+    """Docstring (optional): Describes the function."""
+    # Function body
+    return value  # Optional return statement
 
-print("****** Numbers of Arguments ******")
-result1 = addition(10, 20)
-print(result1)  # Output: 30
+result1 = function_name(arg1, arg2)
 ```
 
 ---
@@ -36,13 +35,12 @@ With keyword arguments, the position of arguments does not matter as each argume
 
 ### **Example:**
 ```python
-def addition(num2, num1):  # Position of arguments is changed
-    sum = num1 + num2
-    return sum
+def function_name(arg2, arg1):
+    """Docstring (optional): Describes the function."""
+    # Function body
+    return value  # Optional return statement
 
-print("****** Keyword Arguments ******")
-result2 = addition(num1=10, num2=20)
-print(result2)  # Output: 30
+result1 = function_name(arg1 = value, arg2 = value)
 ```
 
 ---
@@ -53,17 +51,13 @@ Arbitrary arguments allow functions to accept a variable number of arguments, wh
 
 ### **Example:**
 ```python
-def addition(*nums):  # nums = (10, 20, 30, 40)
-    value = ""
-    for num in nums:
-        value += str(num)
-    print(value)  # Output: "10203040"
-    return sum(nums)  # Using Python built-in sum() function
+def function_name(*args):
+    """Docstring (optional): Describes the function."""
+    # Function body
+    return value  # Optional return statement
 
-result3 = addition(10, 20, 30, 40)
-print(result3)  # Output: 100
-result4 = addition(10, 20, 30, 40, 50)
-print(result4)  # Output: 150
+result1 = function_name(value1, value2, value3, value4)
+result2 = function_name(value1, value2)
 ```
 ---
 
@@ -73,21 +67,12 @@ Using `**kwargs`, functions can accept a variable number of keyword arguments, w
 
 ### **Example:**
 ```python
-def laptopCount(**values):
-    print(values)  # Prints dictionary of keyword arguments
-    print(values['name1'])  # Accessing specific key
-    print(values.get('name5'))  # Accessing non-existing key safely
+def function_name(*kwargs):
+    """Docstring (optional): Describes the function."""
+    # Function body
+    return value  # Optional return statement
 
-laptopCount(name1="Dell", count1=10,
-            name2="Apple", count2=20,
-            name3="Lenovo", count3=30,
-            name4="Asus", count4=5)
-
-### **Output:**
-
-{'name1': 'Dell', 'count1': 10, 'name2': 'Apple', 'count2': 20, 'name3': 'Lenovo', 'count3': 30, 'name4': 'Asus', 'count4': 5}
-Dell
-None  # 'name5' does not exist, so None is returned
+result1 = function_name(key1 = value1, key2 = value2, key3 = value3) ## can include keys as needed
 ```
 
 ---
@@ -98,11 +83,11 @@ Default values allow functions to be called with fewer arguments by providing de
 
 ### **Example:**
 ```python
-def defaultValues(x, y="Ednue"):
-    print(x)
-    print(y)
+def function_name(arg1, arg2="value"):
+    """Docstring (optional): Describes the function."""
+    # Function body
+    return value  # Optional return statement
 
-defaultValues(x=10)  # Output: 10, Ednue
-defaultValues(x=20, y="TCS")  # Output: 20, TCS
-defaultValues(20, "TCS")  # Output: 20, TCS
+result1 = function_name(arg1 = value) ## if arg2 not provided it takes default value
+result1 = function_name(arg1 = value, arg2 = "value2") ## if arg2 provided it takes provided value
 ```
