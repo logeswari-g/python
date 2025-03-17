@@ -17,7 +17,6 @@ def function_name(parameters):
 
 Functions in Python can accept a fixed number of arguments, which must be passed in a specific order.
 
-### **Example:**
 ```python
 def function_name(arg1, arg2):
     """Docstring (optional): Describes the function."""
@@ -33,7 +32,6 @@ result1 = function_name(arg1, arg2)
 
 With keyword arguments, the position of arguments does not matter as each argument is explicitly assigned a value.
 
-### **Example:**
 ```python
 def function_name(arg2, arg1):
     """Docstring (optional): Describes the function."""
@@ -49,7 +47,6 @@ result1 = function_name(arg1 = value, arg2 = value)
 
 Arbitrary arguments allow functions to accept a variable number of arguments, which are treated as a tuple.
 
-### **Example:**
 ```python
 def function_name(*args):
     """Docstring (optional): Describes the function."""
@@ -65,7 +62,6 @@ result2 = function_name(value1, value2)
 
 Using `**kwargs`, functions can accept a variable number of keyword arguments, which are stored as a dictionary.
 
-### **Example:**
 ```python
 def function_name(*kwargs):
     """Docstring (optional): Describes the function."""
@@ -81,7 +77,6 @@ result1 = function_name(key1 = value1, key2 = value2, key3 = value3) ## can incl
 
 Default values allow functions to be called with fewer arguments by providing default values for some parameters.
 
-### **Example:**
 ```python
 def function_name(arg1, arg2="value"):
     """Docstring (optional): Describes the function."""
