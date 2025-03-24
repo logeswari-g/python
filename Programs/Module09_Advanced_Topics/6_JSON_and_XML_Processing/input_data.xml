@@ -1,0 +1,6 @@
+<bookstore>
+  <book category="fiction" id="001">
+    <title>The Lord of the Rings</title>
+    <author>J.R.R. Tolkien</author>
+  </book>
+</bookstore>
