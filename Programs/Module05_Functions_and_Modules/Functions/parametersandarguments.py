@@ -1,4 +1,4 @@
-# Method 1 => Numbers of Arguments
+# Method 1 => Positional Arguments
 def addition(num1, num2):
     sum = num1 + num2
     return sum
