@@ -1,4 +1,4 @@
-# **Complete Notes on Inheritance in Python**
+# **Inheritance in Python**
 
 Inheritance is one of the core concepts of Object-Oriented Programming (OOP) in Python. It allows a new class (child or derived class) to inherit properties and methods from an existing class (parent or base class). This promotes **code reusability**, **extensibility**, and **modularity**.
 
@@ -134,7 +134,41 @@ c = Child()
 print(c.show())  # Output: Parent method and Child method
 ```
 
-## **3. Method Overriding in Inheritance**
+## **3. Using Parent Class Variables in Child Class**
+A child class can access and modify parent class variables.
+
+```python
+class Parent:
+    def __init__(self):
+        self.parent_var = "Parent Variable"
+
+class Child(Parent):
+    def show_parent_var(self):
+        return f"Accessing: {self.parent_var}"
+
+c = Child()
+print(c.show_parent_var())  # Output: Accessing: Parent Variable
+```
+
+If the parent variable is **private** (prefix `__`), it cannot be accessed directly in the child class but can be accessed through a method:
+
+```python
+class Parent:
+    def __init__(self):
+        self.__private_var = "Private Parent Variable"
+    
+    def get_private_var(self):
+        return self.__private_var
+
+class Child(Parent):
+    def show_private_var(self):
+        return self.get_private_var()
+
+c = Child()
+print(c.show_private_var())  # Output: Private Parent Variable
+```
+
+## **4. Method Overriding in Inheritance**
 When a method in the child class has the same name as a method in the parent class, it **overrides** the parent method.
 
 ```python
@@ -150,7 +184,7 @@ c = Child()
 print(c.greet())  # Output: Hello from Child
 ```
 
-## **4. The `isinstance()` and `issubclass()` Functions**
+## **5. The `isinstance()` and `issubclass()` Functions**
 - `isinstance(obj, Class)`: Checks if `obj` is an instance of `Class`.
 - `issubclass(SubClass, ParentClass)`: Checks if `SubClass` is derived from `ParentClass`.
 
