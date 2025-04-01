@@ -64,7 +64,7 @@ laptopCount(name1="Dell", count1=10,
             name4="Asus", count4=5
 )
 
-# Default Values
+# Method 5 => Default Values
 def defaultValues(x, y="Ednue"):
     print (x)
     print (y)
