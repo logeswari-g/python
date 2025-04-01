@@ -32,8 +32,8 @@
 - Class
 - Objects
 - Inheritance
-- Polymorphism
 - Encapsulation
+- Polymorphism
 - Abstraction
 
 **Uses:**
