@@ -1,4 +1,4 @@
-### **Questions on File Handling **
+### **Questions on File Handling**
 
 1) Write a Python program to open a text file named sample.txt, read its contents, and print them to the console.
 
