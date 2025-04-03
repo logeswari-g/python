@@ -19,3 +19,13 @@
 9) Define a function that counts the occurrences of each word in a given text file.
 
 10) Write a Python script that imports a module (e.g., math) and uses at least three of its functions.
+
+11) Create a custom Python package called mathutils containing a module operations.py with functions for addition, subtraction, multiplication, and division.
+
+12) Add an __init__.py file to your package to make it importable as import mathutils.operations.
+
+13) Create a stringutils package with a module text_processing.py that includes functions for counting words, reversing a string, and checking for palindromes.
+
+14) Structure a package with multiple submodules: datautils.parsers, datautils.validators, and datautils.converters.
+
+15) Write a Python script to install your custom package using pip install . from a local directory.
