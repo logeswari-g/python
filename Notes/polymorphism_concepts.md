@@ -1,5 +1,3 @@
-# **Polymorphism in Python (OOP Concept)**
-
 ## **What is Polymorphism?**
 Polymorphism is a fundamental concept in Object-Oriented Programming (OOP) that allows the **same method or operator** to work differently based on the object or data type it is applied to. This improves **code flexibility, reusability, and scalability**.
 
