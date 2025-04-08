@@ -35,7 +35,7 @@ import re
 | `?` | Matches **0 or 1** occurrence of the previous character. |
 | `{n,m}` | Matches between `n` and `m` occurrences. |
 | `[]` | Matches any one character inside the brackets. |
-| ```|``` | Acts as an OR operator (e.g., `a|b` matches 'a' or 'b'). |
+| "|" | Acts as an OR operator (e.g., `a|b` matches 'a' or 'b'). |
 | `()` | Groups expressions together. |
 
 ---
