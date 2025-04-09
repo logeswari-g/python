@@ -1,12 +1,12 @@
 ## 🐘 PostgreSQL Connection with psycopg2
 
-### 📦 Install psycopg2
+### Install psycopg2
 
 ```bash
 pip install psycopg2-binary
 ```
 
-### 🔗 Connect to PostgreSQL
+### Connect to PostgreSQL
 
 ```python
 import psycopg2
@@ -25,7 +25,7 @@ except Exception as e:
     print(f"❌ Error: {e}")
 ```
 
-### 🧑‍💻 Execute Queries
+### Execute Queries
 
 ```python
 cursor = connection.cursor()
@@ -41,7 +41,7 @@ cursor.execute("INSERT INTO your_table (id, name) VALUES (%s, %s)", (1, 'John'))
 connection.commit()
 ```
 
-### 🔚 Close Connection
+### Close Connection
 
 ```python
 cursor.close()
@@ -51,9 +51,9 @@ print("🔌 Connection closed")
 
 ---
 
-## 🍃 MongoDB Connection with PyMongo
+## MongoDB Connection with PyMongo
 
-### 📦 Install pymongo
+### Install pymongo
 
 ```bash
 pip install pymongo
@@ -70,7 +70,7 @@ collection = db["students"]
 print("✅ Connected to MongoDB")
 ```
 
-### 📚 Insert Documents
+### Insert Documents
 
 ```python
 # Single document
@@ -83,7 +83,7 @@ collection.insert_many([
 ])
 ```
 
-### 🔍 Query Documents
+### Query Documents
 
 ```python
 # Find one
@@ -99,7 +99,7 @@ for student in collection.find({"course": "Python"}):
     print(student)
 ```
 
-### 🧽 Update and Delete
+### Update and Delete
 
 ```python
 # Update
@@ -109,7 +109,7 @@ collection.update_one({"name": "Alice"}, {"$set": {"course": "Go"}})
 collection.delete_one({"name": "Bob"})
 ```
 
-### 🔚 Close MongoDB Connection (Optional)
+### Close MongoDB Connection (Optional)
 
 ```python
 client.close()
