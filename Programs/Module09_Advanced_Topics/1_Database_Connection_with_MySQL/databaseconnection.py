@@ -1,21 +1,34 @@
-import mysql.connector
+import pymysql
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",  # Default XAMPP MySQL username
-  password="",  # Default XAMPP MySQL password
-  database="ednue"
-)
+try:
+    print("Connecting using PyMySQL...")
 
-mycursor1 = mydb.cursor()
-mycursor1.execute("INSERT INTO student_details(id, name, coursename, mobilenumber) VALUES (3,'Alex','C++',454545454)")  # Replace with your table name
-mydb.commit()
+    connection = pymysql.connect(
+        host='127.0.0.1',
+        user='root',
+        password='root',
+        database='ednue',
+        port=3306,
+        connect_timeout=5,
+        cursorclass=pymysql.cursors.DictCursor
+    )
 
-mycursor2 = mydb.cursor()
-mycursor2.execute("SELECT * FROM student_details")  # Replace with your table name
-myresult = mycursor2.fetchall()
+    print("Connected to DB!")
 
-for x in myresult:
-  print(x)
+    with connection.cursor() as cursor:
+        # cursor.execute("INSERT INTO student_details (id, name, coursename, mobilenumber) VALUES (%s, %s, %s, %s)", (8, 'Pavi', 'Python', 999999999))
+        # connection.commit()
 
-mydb.close()
+        cursor.execute("select * from student_details where coursename = %s", ('Python'))
+        results = cursor.fetchmany(4)
+
+        print(f"Data from student_details: {results}")
+        # print(results)
+
+except pymysql.MySQLError as e:
+    print(f"PyMySQL Error: {e}")
+
+finally:
+    if 'connection' in locals() and connection.open:
+        connection.close()
+        print("Connection closed.")
