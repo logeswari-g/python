@@ -1,5 +1,5 @@
 
-# 📝 Notes: Connecting to MySQL using PyMySQL in Python
+# Connecting to MySQL using Python
 
 ---
 
