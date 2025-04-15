@@ -1,13 +1,13 @@
 
 # Python Regex Practical Questions
 
-## ✅ 1. Email Extractor
+## 1. Email Extractor
 
 > Write a function that takes a block of text and extracts all valid email addresses using regex.
 
 ---
 
-## ✅ 2. Phone Number Validator
+## 2. Phone Number Validator
 
 > Validate Indian phone numbers with the following rules:
 > - Must be 10 digits
@@ -16,7 +16,7 @@
 
 ---
 
-## ✅ 3. Password Strength Checker
+## 3. Password Strength Checker
 
 > Write a function to validate passwords with the following criteria:
 > - At least 8 characters
@@ -24,7 +24,7 @@
 
 ---
 
-## ✅ 4. Extract Dates in Different Formats
+## 4. Extract Dates in Different Formats
 
 > From a string, extract all dates in the following formats:
 > - `DD-MM-YYYY`
@@ -33,7 +33,7 @@
 
 ---
 
-## ✅ 5. Find All Hashtags in a Tweet
+## 5. Find All Hashtags in a Tweet
 
 > Given a tweet text, extract all hashtags (words starting with `#`, like `#Python`, `#WebScraping`, etc.).
 
