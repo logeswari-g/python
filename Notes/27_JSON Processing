@@ -1,10 +1,10 @@
-## 📦 Parsing json using python
+## Parsing json using python
 
 The `json` module in Python allows you to **encode (serialize)** Python objects into JSON strings and **decode (deserialize)** JSON strings back into Python objects.
 
 ---
 
-## 🔧 Basic Functions
+## Basic Functions
 
 | Function        | Description                                |
 |----------------|--------------------------------------------|
@@ -15,7 +15,7 @@ The `json` module in Python allows you to **encode (serialize)** Python objects 
 
 ---
 
-## ✅ Examples
+## Examples
 
 ### 1. Python to JSON (`dumps`)
 
@@ -64,7 +64,7 @@ with open("data.json", "r") as f:
 
 ---
 
-## 🔍 Formatting Options
+## Formatting Options
 
 - `indent=4` → pretty print with indentation  
 - `sort_keys=True` → sort dictionary keys  
