@@ -1,6 +1,5 @@
 ## Iterable
-An **iterable** is any Python object capable of returning its elements one at a time.  
-It must implement the **`__iter__()`** method that returns an **iterator**.
+An **iterable** is any Python object capable of returning its elements one at a time. 
 
 ### Examples of Iterable:
 - Lists, Tuples, Strings, Sets, Dictionaries, etc.
@@ -10,14 +9,6 @@ my_list = [10, 20, 30]
 for item in my_list:
     print(item)  # list is iterable
 ```
-
-### Behind the Scenes:
-```python
-iter_obj = iter(my_list)  # calls my_list.__iter__()
-print(next(iter_obj))     # 10
-print(next(iter_obj))     # 20
-```
-
 ---
 
 ## Iterator
