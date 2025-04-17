@@ -12,11 +12,8 @@ for item in my_list:
 ---
 
 ## Iterator
-An **iterator** is an object that represents a stream of data.  
-It implements both **`__iter__()`** and **`__next__()`** methods.
-
-- The `__next__()` method returns the next item.
-- Raises **`StopIteration`** when no more data is available.
+Iterators are methods that iterate collections like lists, tuples, etc. Using an iterator method, we can loop through an object and return its elements.
+Technically, a Python iterator object must implement two special methods, __iter__() and __next__(), collectively called the iterator protocol.
 
 ### Creating a Custom Iterator:
 ```python
