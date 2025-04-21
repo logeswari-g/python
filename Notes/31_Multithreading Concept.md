@@ -60,5 +60,4 @@ Use multithreading when your program spends time waiting for something — like:
 4) Waiting for database queries
 5) Sending emails or SMS
 
-Threads can do other work while waiting, making things faster overall.
 ---
