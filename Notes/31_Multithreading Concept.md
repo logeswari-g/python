@@ -3,6 +3,7 @@
 ## 🌱 What is Multithreading?
  
 In Python, multithreading lets you do multiple things at once — especially useful when some tasks are slow because they are "waiting" (like for a website to respond, a file to load, or a download to finish).
+
 ---
 
 ## 🛠 Real Use Case: Sending Emails to Multiple Users
