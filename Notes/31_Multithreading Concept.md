@@ -1,4 +1,4 @@
-# 🧵 Multithreading in Python — Simple Explanation
+# 🧵 Multithreading
 
 ## 🌱 What is Multithreading?
  
